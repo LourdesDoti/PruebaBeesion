@@ -1,0 +1,14 @@
+{
+    "Barra Buscar": {
+        "identificador": "xpath",
+        "valor": "//input[@title='Buscar']"
+    },
+    "Buscar con Google": {
+        "identificador": "xpath",
+        "valor": "//input[@title='Buscar con Google']"
+    },
+    "Sobre Google": {
+        "identificador": "xpath",
+        "valor" : "//a[.='Sobre Google]"
+    }
+}

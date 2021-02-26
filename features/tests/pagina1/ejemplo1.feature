@@ -3,12 +3,8 @@ Feature: PROMIEDOS
 
     Feature Description
     Scenario: Ir a copa de la liga e ir a la ultima fecha
-    Given Abro la pagina "promiedos"
-    And Leo los datos de "promiedos"
-    And Hago click en "Primera"
-    And Hago click en "Fecha 13"
-    And Hago click en "Flecha adelante"
-    And El elemento "" tiene que incluir el texto ""
-    And El elemento "" tiene que tener texto igual a ""
-    And Scrolleo hasta el elemento "" 
-    
+        Given Abro la pagina "promiedos"
+        And Leo los datos de "promiedos"
+        And Hago click en "Primera"
+        And Hago click en "Fecha 13"
+        And Hago click en "Flecha adelante"

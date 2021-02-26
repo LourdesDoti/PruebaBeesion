@@ -4,10 +4,10 @@ const { assert } = require('chai');
 const { By, Key, until } = require('selenium-webdriver');
 const { ExceptionHandler, exceptions } = require('winston');
 const { log } = require(`${process.cwd()}/logger`);
+const cantReintentos = 5;
 
 async function clickElement(json, element) {
 
-    var cantReintentos = 3;
     var elementoEncontrado = false;
     var nroReintento = 1;
     var errorTrace;
@@ -56,7 +56,6 @@ async function clickElement(json, element) {
 async function llenarCampo(json, element, texto) {
 
 
-    var cantReintentos = 3;
     var elementoEncontrado = false;
     var nroReintento= 1;
     var errorTrace ;

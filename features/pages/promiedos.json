@@ -1,0 +1,14 @@
+{
+    "Primera": {
+        "identificador": "xpath",
+        "valor": "//a[.='Primera']"
+    },
+    "Fecha 13": {
+        "identificador": "xpath",
+        "valor": "//div[contains(text(),'13')]"
+    },
+    "Flecha adelante": {
+        "identificador": "xpath",
+        "valor": "//div[@id='flechaad']"
+    }
+}

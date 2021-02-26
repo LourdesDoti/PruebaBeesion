@@ -1,8 +1,10 @@
-Feature: Feature name
+@promiedos
+Feature: PROMIEDOS
 
     Feature Description
-    Scenario: Scenario name 1
-    Given Abro la pagina "google"
-    And Leo los datos de "google"
-    And Lleno el campo "Barra Buscar" con "hola"
-    And Hago click en "Sobre Google"
+    Scenario: Ir a copa de la liga e ir a la ultima fecha
+        Given Abro la pagina "promiedos"
+        And Leo los datos de "promiedos"
+        And Hago click en "Primera"
+        And Hago click en "Fecha 13"
+        And Hago click en "Flecha adelante"

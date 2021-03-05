@@ -1,0 +1,13 @@
+{
+    "mode": "local",
+    "env" : {
+        "promiedos": "dev",
+        "google": "dev",
+        "itau": "testing"
+    },
+    "serverUrl": "https://zalenium.aper.cloud/wd/hub",
+    "examples":{
+        "mode": ["local","server"]
+    }
+
+}

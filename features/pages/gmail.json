@@ -1,0 +1,14 @@
+{
+    "CorreoElectronico": {
+        "identificador": "xpath",
+        "valor": "//input[@type='email']"
+    },
+    "Contraseña": {
+        "identificador": "xpath",
+        "valor": "//input[@type='password']"
+    },
+    "Siguiente": {
+        "identificador": "xpath",
+        "valor" : "//span[contains(text(),'Siguiente')]"
+    }
+}

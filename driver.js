@@ -15,11 +15,14 @@ async function buildDriver() {
         case "local": {
             log.info(`Abriendo un chrome de forma local`);
             driver = new seleniumWebdriver.Builder().forBrowser("chrome").build();
+            await driver.manage().window().maximize(); 
             break;
         };
         case "server": {
             log.info(`Abriendo un chrome en modo server en la siguiente url : ${config.serverUrl}`);
-            driver = new seleniumWebdriver.Builder().usingServer(config.serverUrl).forBrowser("chrome").build(); break;
+            driver = new seleniumWebdriver.Builder().usingServer(config.serverUrl).forBrowser("chrome").build(); 
+            await driver.manage().window().maximize(); 
+            break;
         };
         default: {
             log.error("El archivo config necesita un valor correcto en el campo mode:Puede ser local o server.   Se encontró: "+ config.mode);
@@ -27,6 +30,7 @@ async function buildDriver() {
             process.exit();
           }
     }
+    await driver.manage().deleteAllCookies();
 
 }
 

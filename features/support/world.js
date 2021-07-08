@@ -11,7 +11,7 @@ function ThisWorld({ attach }) {
  
   this.page = '';
   this.argv = argv;
-  setDefaultTimeout('60000');
+  setDefaultTimeout('90000');
   this.driver= getDriver();
   this.env = config.env;
   this.data = new Map();

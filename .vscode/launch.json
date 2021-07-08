@@ -22,7 +22,7 @@
             "type": "node",
             "request": "launch",
             "console": "integratedTerminal",
-            "name": "Etiqueta Promiedos",
+            "name": "Etiqueta PRUEBA",
             "skipFiles": [
                 "<node_internals>/**"
             ],
@@ -31,7 +31,7 @@
                 "-f",
                 "json:reports/cucumber_report.json",
                 "--tags",
-                "@promiedos"
+                "@PRUEBA"
             ]
         }
     ]
